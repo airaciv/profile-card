@@ -6,11 +6,10 @@ body {
 
 body {
   background-color: hsl(185, 75%, 39%);
-  background-attachment: fixed;
-  background-image: url(./bg-pattern-top.svg), url(./bg-pattern-bottom.svg);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
   background-repeat: no-repeat;
-  background-position: -150% 150%, 200% -75%;
-  background-size: 80%;
+  min-height: 100vh;
   font-family: "Kumbh Sans", sans-serif;
 }
 
@@ -18,7 +17,7 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 12%;
+  padding-top: 25vh;
 }
 
 /********************* Profile Card *********************/
@@ -26,18 +25,13 @@ body {
 .card {
   background-color: white;
   border-radius: 15px;
+  margin: 0 30px 0;
   position: relative;
   width: 350px;
 }
 
 @media (max-width: 376px) {
-  body {
-    background-position: -400px -300px, 150px 350px;
-    background-size: 600px;
-  }
-
   .card {
-    margin: 100px 30px 0;
     width: 100%;
   }
 }
